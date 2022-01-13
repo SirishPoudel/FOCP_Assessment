@@ -51,7 +51,8 @@ def speed():
                 user_input2 =  input("\n\tEnter the Next Reading: \n\t" +"->  ").lower()
                 if user_input2 == "":
                     break
-                
+                elif user_input2 == "u" or user_input2 == "e" or user_input2[1] =="u" or user_input2[1] == "e":
+                    raise ValueError
                 elif user_input2[0] == "u":
                     print("\n\tReading saved.")
                     count += 1
